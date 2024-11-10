@@ -25,14 +25,14 @@ THE API EXPECTS IMAGES IN A MULTIPART FORM DATA UPLOAD. BELOW IS A SAMPLE PAYLOA
     "image1.jpg"
   ]
 }
----
+
 ### EXAMPLE REQUEST (USING CURL)
 
 curl -X POST "https://mpox-detection.onrender.com/detect" \
      -H "accept: application/json" \
      -H "Content-Type: multipart/form-data" \
      -F "files=@/path/to/your/image1.jpg"
----
+
 ### RESPONSE FORMAT
 
 THE API RETURNS A JSON RESPONSE INDICATING THE STATUS OF THE CASE AND THE NUMBER OF DETECTIONS:
