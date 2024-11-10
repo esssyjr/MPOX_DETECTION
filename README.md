@@ -99,5 +99,10 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ## 💬 CONTACT
 
-FOR QUESTIONS OR FEEDBACK, PLEASE CONTACT ISMAIL ISMAIL TIJJANI THROUGH THE GITHUB REPOSITORY.
+### 💬 Contact
+
+For questions or feedback, please reach out to:
+
+- **Email:** [ismailismailtj@gmail.com](mailto:your-email@example.com)
+- **LinkedIn:** [https://www.linkedin.com/in/ismail-tijjani-31a41b1aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app    ](https://linkedin.com/in/your-linkedin-username)
 
