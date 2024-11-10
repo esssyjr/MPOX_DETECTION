@@ -25,7 +25,7 @@ THE API EXPECTS IMAGES IN A MULTIPART FORM DATA UPLOAD. BELOW IS A SAMPLE PAYLOA
     "image1.jpg"
   ]
 }
-
+---
 ### EXAMPLE REQUEST (USING CURL)
 
 curl -X POST "https://mpox-detection.onrender.com/detect" \
