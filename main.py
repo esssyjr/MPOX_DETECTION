@@ -1,5 +1,6 @@
 
 from fastapi import FastAPI, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 from ultralytics import YOLO
 from PIL import Image
@@ -7,6 +8,20 @@ import io
 
 # Initialize the FastAPI app
 app = FastAPI()
+
+# List of allowed frontend domains
+allowed_origins = [
+    "http://localhost:3000",
+]
+
+# Configure CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 # Load your YOLO model when the app starts
 model = YOLO("MPOX.pt")  # Ensure your model path is correct
